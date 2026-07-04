@@ -1,21 +1,14 @@
-# ESP32-P4-JC8012P4A1
 substitutions:
   name: "jc8012"
   friendly_name: "JC8012 Screen"
-  room: "Your Room"
 
-# Wifi Setup
 wifi:
-  ssid:" Wi-Fi.HK via HKU "
-  password: ""
+  ssid: "你的WiFi名称"
+  password: "你的WiFi密码"
   fast_connect: true
 
-# Packages
 packages:
-  setup:
-    url: https://github.com/jtenniswood/esphome-lvgl/
-    file: guition-esp32-p4-jc8012p4a1/package.yaml
-    refresh: 1sec
+  device: https://github.com/jtenniswood/esphome-lvgl/blob/main/guition-esp32-p4-jc8012p4a1/package.yaml
 
 esphome:
   name: ${name}
