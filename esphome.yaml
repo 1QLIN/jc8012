@@ -1,7 +1,7 @@
 # ESP32-P4-JC8012P4A1
 substitutions:
-  name: "your-device-name"
-  friendly_name: "Your Room Sensor"
+  name: "jc8012"
+  friendly_name: "JC8012 Screen"
   room: "Your Room"
 
 # Wifi Setup
@@ -16,3 +16,12 @@ packages:
     url: https://github.com/jtenniswood/esphome-lvgl/
     file: guition-esp32-p4-jc8012p4a1/package.yaml
     refresh: 1sec
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+
+esp32:
+  board: esp32-p4
+  framework:
+    type: esp-idf
